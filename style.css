@@ -14,14 +14,22 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: aliceblue;
+}
+body > div {
+  border: 1px solid black;
+  margin-top: 20px;
+  width: 500px;
+  height: 300px;
+  background-color: white;
 }
 
 h2 {
-  font-weight: 400;
-  color: teal;
+  font-weight: 700;
+  color: rgb(0, 128, 255);
 }
 .container {
-  width: 300px;
+  width: 350px;
 }
 .form-group {
   width: 100%;
