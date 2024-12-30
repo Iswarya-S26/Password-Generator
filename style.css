@@ -11,29 +11,40 @@ body {
   height: 100vh;
   width: 100vw;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: aliceblue;
-}
-body > div {
-  border: 1px solid black;
-  margin-top: 20px;
-  width: 500px;
-  height: 300px;
-  background-color: white;
 }
 
-h2 {
-  font-weight: 700;
-  color: rgb(0, 128, 255);
-}
 .container {
-  width: 350px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
-.form-group {
+
+.container h2 {
+  font-weight: 700;
+  text-align: center;
+}
+#length {
+  height: 22px;
+  width: 73px;
+}
+.container form .form-group {
   width: 100%;
   display: flex;
+  justify-content: space-between;
   margin: 20px 5px;
   gap: 10px;
+}
+#addon-wrapping:hover {
+  cursor: pointer;
+  background-color: #ccc;
+}
+.container form .form-group button {
+  width: 100%;
+}
+@media (min-width: 576px) {
+  .container {
+    width: 300px;
+  }
 }
