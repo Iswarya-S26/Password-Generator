@@ -18,24 +18,10 @@ btnCopy.addEventListener("click", async () => {
   }
 });
 
-/*
-ASCII - American Standard Code for Information Interchange
-
-0-128
-0-255
-
-65-90  -  A-Z
-97-122 -  a-z
-48-57  -  0-9
-32     -  space
-
-*/
-
 function generateRandomChar(min, max) {
   const limit = max - min + 1;
   return String.fromCharCode(Math.floor(Math.random() * limit) + min);
 }
-
 function captitalValue() {
   return generateRandomChar(65, 90);
 }
@@ -50,6 +36,19 @@ function symbolValue() {
   const symbols = "~!@#$%^&*()_+|}{<>*./";
   return symbols[Math.floor(Math.random() * symbols.length)];
 }
+
+/*
+ASCII - American Standard Code for Information Interchange
+
+0-128
+0-255
+
+65-90  -  A-Z
+97-122 -  a-z
+48-57  -  0-9
+32     -  space
+
+*/
 
 const functionArray = [
   {
@@ -77,13 +76,14 @@ frm.addEventListener("submit", (e) => {
 
   let generatedPassword = "";
 
-  const funArray = functionArray.filter(({ element }) => element.checked);
-  //console.log(funArray);
+  const funArray = functionArray.filter((item) => item.element.checked);
+  console.log(funArray);
 
   for (i = 0; i < limit; i++) {
     const index = Math.floor(Math.random() * funArray.length);
     const letter = funArray[index].fun();
-    generatedPassword += letter; //5$
+    generatedPassword += letter;
+    console.log("hi");
   }
 
   outputElement.value = generatedPassword;
