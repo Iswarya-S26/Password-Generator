@@ -1,6 +1,6 @@
 # 🔐 Password Generator
 
-Generate secure and customizable passwords with ease! This **Password Generator** allows to create strong passwords with your choice of length and character compination.
+Easily create secure and customizable passwords with this **Password Generator!** Choose your desired length and character combinations to generate strong and reliable passwords.
 
 ## 🌟 Features
 
